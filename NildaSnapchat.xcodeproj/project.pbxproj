@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E8FC84192CE79FD50006ED8A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E8FC84182CE79FD50006ED8A /* FirebaseAnalytics */; };
+		E8FC841B2CE79FD50006ED8A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = E8FC841A2CE79FD50006ED8A /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		E8FC841D2CE79FD50006ED8A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E8FC841C2CE79FD50006ED8A /* FirebaseAuth */; };
+		E8FC841F2CE79FD50006ED8A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E8FC841E2CE79FD50006ED8A /* FirebaseCore */; };
+		E8FC84212CE79FD50006ED8A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E8FC84202CE79FD50006ED8A /* FirebaseDatabase */; };
+		E8FC84232CE79FD50006ED8A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E8FC84222CE79FD50006ED8A /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E8FC83F22CE798610006ED8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -37,6 +46,20 @@
 			);
 			target = E8FC83DA2CE798600006ED8A /* NildaSnapchat */;
 		};
+		E8FC84152CE79DAE0006ED8A /* Exceptions for "NildaSnapchat" folder in "NildaSnapchatTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = E8FC83F02CE798610006ED8A /* NildaSnapchatTests */;
+		};
+		E8FC84162CE79DAE0006ED8A /* Exceptions for "NildaSnapchat" folder in "NildaSnapchatUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = E8FC83FA2CE798610006ED8A /* NildaSnapchatUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +67,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				E8FC84032CE798610006ED8A /* Exceptions for "NildaSnapchat" folder in "NildaSnapchat" target */,
+				E8FC84152CE79DAE0006ED8A /* Exceptions for "NildaSnapchat" folder in "NildaSnapchatTests" target */,
+				E8FC84162CE79DAE0006ED8A /* Exceptions for "NildaSnapchat" folder in "NildaSnapchatUITests" target */,
 			);
 			path = NildaSnapchat;
 			sourceTree = "<group>";
@@ -65,6 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FC84212CE79FD50006ED8A /* FirebaseDatabase in Frameworks */,
+				E8FC84192CE79FD50006ED8A /* FirebaseAnalytics in Frameworks */,
+				E8FC841D2CE79FD50006ED8A /* FirebaseAuth in Frameworks */,
+				E8FC841F2CE79FD50006ED8A /* FirebaseCore in Frameworks */,
+				E8FC841B2CE79FD50006ED8A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				E8FC84232CE79FD50006ED8A /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +156,12 @@
 			);
 			name = NildaSnapchat;
 			packageProductDependencies = (
+				E8FC84182CE79FD50006ED8A /* FirebaseAnalytics */,
+				E8FC841A2CE79FD50006ED8A /* FirebaseAnalyticsWithoutAdIdSupport */,
+				E8FC841C2CE79FD50006ED8A /* FirebaseAuth */,
+				E8FC841E2CE79FD50006ED8A /* FirebaseCore */,
+				E8FC84202CE79FD50006ED8A /* FirebaseDatabase */,
+				E8FC84222CE79FD50006ED8A /* FirebaseStorage */,
 			);
 			productName = NildaSnapchat;
 			productReference = E8FC83DB2CE798600006ED8A /* NildaSnapchat.app */;
@@ -208,6 +245,9 @@
 			);
 			mainGroup = E8FC83D22CE798600006ED8A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E8FC83DC2CE798600006ED8A /* Products */;
 			projectDirPath = "";
@@ -563,6 +603,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 12.0.0;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8FC84182CE79FD50006ED8A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E8FC841A2CE79FD50006ED8A /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		E8FC841C2CE79FD50006ED8A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E8FC841E2CE79FD50006ED8A /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E8FC84202CE79FD50006ED8A /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E8FC84222CE79FD50006ED8A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8FC84172CE79FD50006ED8A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8FC83D32CE798600006ED8A /* Project object */;
 }
